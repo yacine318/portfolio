@@ -1,0 +1,80 @@
+.competences-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-top: 24px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.competences-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1e293b;
+  cursor: pointer;
+  list-style: none;
+}
+
+.competences-header::-webkit-details-marker {
+  display: none;
+}
+
+.competences-box[open] .chevron {
+  transform: rotate(0deg);
+}
+
+.competences-box:not([open]) .chevron {
+  transform: rotate(180deg);
+}
+
+.chevron {
+  font-size: 0.75rem;
+  color: #64748b;
+  transition: transform 0.2s ease;
+}
+
+.competences-content {
+  margin-top: 16px;
+}
+
+.outils-resume {
+  font-size: 0.85rem;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.competence-groupe {
+  margin-bottom: 18px;
+}
+
+.competence-groupe h4 {
+  color: #4f46e5; /* Bleu/violet du référentiel */
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.competence-groupe ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.competence-groupe li {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: #334155;
+  padding: 4px 0 4px 12px;
+  line-height: 1.5;
+}
+
+.competence-groupe li span {
+  color: #64748b;
+  min-width: 24px;
+  font-weight: 500;
+}
